@@ -9,20 +9,20 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '23898744'))
-    API_HASH = str(getenv('API_HASH', '0b13c810c80b548604650cbe3c3db0c3'))
+    API_ID = int(getenv('API_ID', '24260003'))
+    API_HASH = str(getenv('API_HASH', 'a7fb5ac26f0e0a5742c43675fdec8f54'))
     BOT_TOKEN = str(getenv('BOT_TOKEN', ''))
-    name = str(getenv('name', 'filetolinkvjbot'))
+    name = str(getenv('name', 'namistreambot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002077669335'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002025688275'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5698613889").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "6335438828").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'Rohesh_Gavit'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'Anix_boy'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
@@ -35,6 +35,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://filmyrohesh51:19SmDYqC1N5DqLkD@cluster0.jogzc68.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Filmy_Rohesh'))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://Lazy:Lazy@cluster0.vmcibgv.mongodb.net/?retryWrites=true&w=majority'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Uchiha_Backups'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1002077669335")).split()))  
